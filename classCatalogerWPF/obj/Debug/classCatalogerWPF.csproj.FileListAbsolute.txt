@@ -1,0 +1,1 @@
+c:\users\justin\documents\visual studio 2013\Projects\classCatalogerWPF\classCatalogerWPF\bin\Debug\classCatalogerWPF.exe.config
