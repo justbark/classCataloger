@@ -12,10 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections.ObjectModel;
 
 namespace classCatalogerWPF
 {
-    
+    public static class Shared
+    {
+        public static ObservableCollection<Book> bookList = new ObservableCollection<Book>();
+        
+    }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -25,21 +30,11 @@ namespace classCatalogerWPF
         {
             InitializeComponent();
         }
-
-        AddBookWindow secondForm = new AddBookWindow();// create a new window object
-                                             // a website showed me to put this here.
+        
         private void addABookButton_Click(object sender, RoutedEventArgs e)
         {
+            AddBookWindow secondForm = new AddBookWindow();// create a new window object
             secondForm.Show();//show new window object
-            Book newBook = new Book();// create a new book
-
-            newBook.author = secondForm.authorTextBox.Text;
-            newBook.title = secondForm.titleTextBox.Text;
-            newBook.editor = secondForm.editorTextBox.Text;
-            newBook.date = secondForm.dateTextBox.Text;
-
-            bookList.Add(newBook);
-            this.Close();
 
         }
     }

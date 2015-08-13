@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace classCatalogerWPF
 {
-    class Book
+    public class Book
     {
         public string isbn10; //isbn 10 digit number
         public string isbn13; //isbn 13 digit number

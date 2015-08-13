@@ -19,7 +19,7 @@
         <TextBox x:Name="pagesTextBox" HorizontalAlignment="Left" Height="23" Margin="79,143,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
         <TextBox x:Name="isbn10TextBox" HorizontalAlignment="Left" Height="23" Margin="79,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
         <TextBox x:Name="isbn13TextBox" HorizontalAlignment="Left" Height="23" Margin="79,201,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
-        <Button x:Name="addBookButton" Content="Add Book" HorizontalAlignment="Left" Margin="385,100,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="finalAddBookButton" Content="Add Book" HorizontalAlignment="Left" Margin="385,100,0,0" VerticalAlignment="Top" Width="75" Click="finalAddBookButton_Click"/>
 
     </Grid>
 </Window>

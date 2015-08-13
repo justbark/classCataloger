@@ -1,1 +1,16 @@
 c:\users\justin\documents\visual studio 2013\Projects\classCatalogerWPF\classCatalogerWPF\bin\Debug\classCatalogerWPF.exe.config
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\bin\Debug\classCatalogerWPF.exe.config
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\classCatalogerWPF.csprojResolveAssemblyReference.cache
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\AddBookWindow.baml
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\MainWindow.baml
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\AddBookWindow.g.cs
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\MainWindow.g.cs
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\App.g.cs
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\classCatalogerWPF_MarkupCompile.cache
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\classCatalogerWPF.g.resources
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\classCatalogerWPF.Properties.Resources.resources
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\classCatalogerWPF.csproj.GenerateResource.Cache
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\bin\Debug\classCatalogerWPF.exe
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\bin\Debug\classCatalogerWPF.pdb
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\classCatalogerWPF.exe
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\classCatalogerWPF.pdb

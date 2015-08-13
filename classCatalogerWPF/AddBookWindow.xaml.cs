@@ -23,5 +23,19 @@ namespace classCatalogerWPF
         {
             InitializeComponent();
         }
+
+
+        private void finalAddBookButton_Click(object sender, RoutedEventArgs e)
+        {
+            Book newBook = new Book();// create a new book
+
+            newBook.author = authorTextBox.Text;
+            newBook.title = titleTextBox.Text;
+            newBook.editor = editorTextBox.Text;
+            newBook.date = dateTextBox.Text;
+
+            Shared.bookList.Add(newBook);
+            this.Close();
+        }
     }
 }
