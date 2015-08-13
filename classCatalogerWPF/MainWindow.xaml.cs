@@ -29,6 +29,7 @@ namespace classCatalogerWPF
         public MainWindow()
         {
             InitializeComponent();
+           
         }
         
         private void addABookButton_Click(object sender, RoutedEventArgs e)
@@ -37,5 +38,6 @@ namespace classCatalogerWPF
             secondForm.Show();//show new window object
 
         }
+        
     }
 }
