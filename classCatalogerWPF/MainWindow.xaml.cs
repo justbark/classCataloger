@@ -20,16 +20,19 @@ namespace classCatalogerWPF
     {
         public static ObservableCollection<Book> bookList = new ObservableCollection<Book>();
         
+       
     }
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
-           
+            
+            }
         }
         
         private void addABookButton_Click(object sender, RoutedEventArgs e)

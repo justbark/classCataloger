@@ -17,6 +17,8 @@ namespace classCatalogerWPF
         public string date;
         public string numberOfPages;
         public List<String> tags = new List<String>();
+        public string studentName; // who has the book checked out
+        public string previousStudentName; // variable for the last student who had the book
         public bool inOut;
     }
 }
