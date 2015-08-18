@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Classroom Library" Height="371.493" Width="668.284">
     <Grid Margin="0,0,-0.4,0.8">
-        <ListBox x:Name="libraryListBox" HorizontalAlignment="Left" Height="292" Margin="10,39,0,0" VerticalAlignment="Top" Width="439"/>
+        <ListBox x:Name="libraryListBox" HorizontalAlignment="Left" Height="292" Margin="10,39,0,0" VerticalAlignment="Top" Width="439" SelectionChanged="libraryListBox_SelectionChanged"/>
         <Label Content="Library" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.845,-0.305"/>
-        <Button x:Name="checkOutButton" Content="Check out" HorizontalAlignment="Left" Margin="468,39,0,0" VerticalAlignment="Top" Width="184"/>
+        <Button x:Name="checkOutButton" Content="Check out" HorizontalAlignment="Left" Margin="468,39,0,0" VerticalAlignment="Top" Width="184" Click="checkOutButton_Click"/>
         <Button x:Name="addABookButton" Content="Add a book" HorizontalAlignment="Left" Margin="468,63,0,0" VerticalAlignment="Top" Width="184" RenderTransformOrigin="-0.201,-0.236" Click="addABookButton_Click"/>
         <Button x:Name="removeBookButton" Content="Remove a book" HorizontalAlignment="Left" Margin="468,87,0,0" VerticalAlignment="Top" Width="184"/>
         <Button x:Name="editBookButton" Content="Edit a book" HorizontalAlignment="Left" Margin="468,111,0,0" VerticalAlignment="Top" Width="184"/>

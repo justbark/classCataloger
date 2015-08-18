@@ -51,6 +51,24 @@ namespace classCatalogerWPF
             secondForm.Show();//show new window object
 
         }
+
+        private void libraryListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            String theBookStr = libraryListBox.SelectedItem.ToString();
+            //make a string variable for the selected item in libraryListBox
+            Book theBook = Shared.bookList.Where(x => x.title == theBookStr).First();
+            //make a variable of a book object  where the title == theBookStr
+            //this makes a list of all the books with that title. .First() is saying
+            //show the first object with the name == theBookStr
+            statusLabel.Content = theBook.checkedOut == true ? "Checked out" : "available";
+            // stringvalue = condition == true ? then this value : otherwise this;
+        }
+
+        private void checkOutButton_Click(object sender, RoutedEventArgs e)
+        {
+            String theBookStr = libraryListBox.SelectedItem.ToString();
+            Book theBook = Shared.bookList.Where(x => x.title == theBookStr).First();
+        }
         
     }
 }
