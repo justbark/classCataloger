@@ -31,10 +31,20 @@ namespace classCatalogerWPF
         public MainWindow()
         {
             InitializeComponent();
-            
+            Shared.bookList.CollectionChanged+=bookList_CollectionChanged; //check if the collection has changed
+         }
+
+        private void bookList_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            //event handler for if booklist changes
+ 	        //    throw new NotImplementedException();
+            libraryListBox.Items.Clear(); //clear the booklist
+            foreach(var libraryBook in Shared.bookList)
+            {
+                libraryListBox.Items.Add(libraryBook.title);//add each book that is in the collection back to the listbox
             }
+            
         }
-        
         private void addABookButton_Click(object sender, RoutedEventArgs e)
         {
             AddBookWindow secondForm = new AddBookWindow();// create a new window object

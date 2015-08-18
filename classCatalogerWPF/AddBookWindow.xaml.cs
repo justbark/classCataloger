@@ -34,7 +34,7 @@ namespace classCatalogerWPF
             newBook.editor = editorTextBox.Text;
             newBook.date = dateTextBox.Text;
 
-            Shared.bookList.Add(newBook);
+            Shared.bookList.Add(newBook); //add the new book to the bookList
             this.Close();
         }
     }

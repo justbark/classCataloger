@@ -11,14 +11,14 @@
         <Label Content="pages:" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top"/>
         <Label Content="isbn10:" HorizontalAlignment="Left" Margin="10,171,0,0" VerticalAlignment="Top"/>
         <Label Content="isbn13:" HorizontalAlignment="Left" Margin="10,197,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="titleTextBox" HorizontalAlignment="Left" Height="23" Margin="79,14,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
-        <TextBox x:Name="authorTextBox" HorizontalAlignment="Left" Height="23" Margin="79,40,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
-        <TextBox x:Name="coAuthorTextBox" HorizontalAlignment="Left" Height="23" Margin="79,66,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
-        <TextBox x:Name="editorTextBox" HorizontalAlignment="Left" Height="23" Margin="79,92,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
-        <TextBox x:Name="dateTextBox" HorizontalAlignment="Left" Height="23" Margin="79,118,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
-        <TextBox x:Name="pagesTextBox" HorizontalAlignment="Left" Height="23" Margin="79,143,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
-        <TextBox x:Name="isbn10TextBox" HorizontalAlignment="Left" Height="23" Margin="79,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
-        <TextBox x:Name="isbn13TextBox" HorizontalAlignment="Left" Height="23" Margin="79,201,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
+        <TextBox x:Name="titleTextBox" HorizontalAlignment="Left" Height="23" Margin="79,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
+        <TextBox x:Name="authorTextBox" HorizontalAlignment="Left" Height="23" Margin="79,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
+        <TextBox x:Name="coAuthorTextBox" HorizontalAlignment="Left" Height="23" Margin="79,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
+        <TextBox x:Name="editorTextBox" HorizontalAlignment="Left" Height="23" Margin="79,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
+        <TextBox x:Name="dateTextBox" HorizontalAlignment="Left" Height="23" Margin="79,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
+        <TextBox x:Name="pagesTextBox" HorizontalAlignment="Left" Height="23" Margin="79,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
+        <TextBox x:Name="isbn10TextBox" HorizontalAlignment="Left" Height="23" Margin="79,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
+        <TextBox x:Name="isbn13TextBox" HorizontalAlignment="Left" Height="23" Margin="79,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258"/>
         <Button x:Name="finalAddBookButton" Content="Add Book" HorizontalAlignment="Left" Margin="385,100,0,0" VerticalAlignment="Top" Width="75" Click="finalAddBookButton_Click"/>
 
     </Grid>
