@@ -14,3 +14,5 @@ C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\bin\Debug\clas
 C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\bin\Debug\classCatalogerWPF.pdb
 C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\classCatalogerWPF.exe
 C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\classCatalogerWPF.pdb
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\CheckOutWindow.baml
+C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\CheckOutWindow.g.cs

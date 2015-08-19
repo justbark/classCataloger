@@ -23,5 +23,25 @@ namespace classCatalogerWPF
         {
             InitializeComponent();
         }
+
+        private void checkOutToTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void durationComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void dueDateReminderCheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void finalCheckOutButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -6,8 +6,8 @@
         <Label x:Name="checkoutBookLabel" Content="Selected book:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="selectedBookLabel" Content="N/A" HorizontalAlignment="Left" Margin="103,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="studentToCheckoutToLabel" Content="Check book out to:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="checkOutToTextBox" HorizontalAlignment="Left" Height="23" Margin="121,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241"/>
-        <ComboBox x:Name="durationComboBox" HorizontalAlignment="Left" Margin="73,68,0,0" VerticalAlignment="Top" Width="120">
+        <TextBox x:Name="checkOutToTextBox" HorizontalAlignment="Left" Height="23" Margin="121,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" TextChanged="checkOutToTextBox_TextChanged"/>
+        <ComboBox x:Name="durationComboBox" HorizontalAlignment="Left" Margin="73,68,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="durationComboBox_SelectionChanged">
             <Button Content="1 day"/>
             <Button Content="2 days"/>
             <Button Content="3 days"/>
@@ -17,8 +17,8 @@
             <Button Content="7 days"/>
         </ComboBox>
         <Label x:Name="durationLabel" Content="duration:" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="dueDateReminderCheckBox" Content="Remind me when this book is due" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="finalCheckOutButton" Content="Check this book out" HorizontalAlignment="Left" Margin="121,131,0,0" VerticalAlignment="Top" Width="151"/>
+        <CheckBox x:Name="dueDateReminderCheckBox" Content="Remind me when this book is due" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Checked="dueDateReminderCheckBox_Checked"/>
+        <Button x:Name="finalCheckOutButton" Content="Check this book out" HorizontalAlignment="Left" Margin="121,131,0,0" VerticalAlignment="Top" Width="151" Click="finalCheckOutButton_Click"/>
 
     </Grid>
 </Window>
