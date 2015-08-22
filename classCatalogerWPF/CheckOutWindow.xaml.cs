@@ -19,19 +19,15 @@ namespace classCatalogerWPF
     /// </summary>
     public partial class CheckOutWindow : Window
     {
-        public CheckOutWindow()
+        public CheckOutWindow(ref Book currentBook)
         {
             InitializeComponent();
-        }
-
-        private void checkOutToTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            this.Close();
+            selectedBookLabel.Content = currentBook.title; 
         }
 
         private void durationComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            
         }
 
         private void dueDateReminderCheckBox_Checked(object sender, RoutedEventArgs e)
@@ -41,7 +37,7 @@ namespace classCatalogerWPF
 
         private void finalCheckOutButton_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }

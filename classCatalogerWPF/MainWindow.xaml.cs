@@ -66,7 +66,9 @@ namespace classCatalogerWPF
 
         private void checkOutButton_Click(object sender, RoutedEventArgs e)
         {
-            CheckOutWindow checkOutForm = new CheckOutWindow();
+            String theBookStr = libraryListBox.SelectedItem.ToString();
+            Book theBook = Shared.bookList.Where(x => x.title == theBookStr).First();
+            CheckOutWindow checkOutForm = new CheckOutWindow(ref theBook);
             checkOutForm.Show();
         }
         
