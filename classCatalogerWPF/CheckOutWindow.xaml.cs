@@ -19,15 +19,21 @@ namespace classCatalogerWPF
     /// </summary>
     public partial class CheckOutWindow : Window
     {
+        Book currentBook;
         public CheckOutWindow(ref Book currentBook)
         {
             InitializeComponent();
-            selectedBookLabel.Content = currentBook.title; 
+            this.currentBook = currentBook;
+            //may not need to have a check for null, this is just an example.
+            if (currentBook != null)
+            {
+                selectedBookLabel.Content = currentBook.title; 
+            } 
         }
 
         private void durationComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
+            currentBook.checkOutDur = durationComboBox.SelectedItem.ToString();
         }
 
         private void dueDateReminderCheckBox_Checked(object sender, RoutedEventArgs e)
@@ -37,7 +43,9 @@ namespace classCatalogerWPF
 
         private void finalCheckOutButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            currentBook.studentName = checkOutToTextBox.Text;
+            currentBook.checkedOut = true;
+            this.Close();
         }
     }
 }
