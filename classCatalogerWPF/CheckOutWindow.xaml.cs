@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Text.RegularExpressions;
 
 namespace classCatalogerWPF
 {
@@ -33,7 +34,11 @@ namespace classCatalogerWPF
 
         private void durationComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            currentBook.checkOutDur = durationComboBox.SelectedItem.ToString();
+            String myStr = durationComboBox.SelectedItem.ToString();
+            myStr = myStr.Replace("days", "");
+
+            currentBook.checkOutDur = Convert.ToInt32(myStr);
+            //cant figure this out yet
         }
 
         private void dueDateReminderCheckBox_Checked(object sender, RoutedEventArgs e)
@@ -47,8 +52,7 @@ namespace classCatalogerWPF
             {
                 currentBook.studentName = checkOutToTextBox.Text;
                 currentBook.checkedOut = true;
-                DateTime currentDate = DateTime.Now;
-                currentBook.checkOutDate = currentDate;
+                currentBook.checkOutDate = DateTime.Now;
                 this.Close();
             }
             else

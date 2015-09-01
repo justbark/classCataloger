@@ -42,7 +42,7 @@ namespace classCatalogerWPF
             {
                 if(b.IsOverdue())
                 {
-                    //I’m overdue!
+                    
                 }
             }
         }
@@ -51,10 +51,16 @@ namespace classCatalogerWPF
         {
             //event handler for if booklist changes
  	        //    throw new NotImplementedException();
+            string addStr;
             libraryListBox.Items.Clear(); //clear the booklist
             foreach(var libraryBook in Shared.bookList)
             {
-                libraryListBox.Items.Add(libraryBook.title);//add each book that is in the collection back to the listbox
+               if(libraryBook.IsOverdue())
+                    addStr = libraryBook.title + "(OVERDUE)";
+               else
+                    addStr = libraryBook.title;
+ 
+               libraryListBox.Items.Add(addStr);
             }
             
         }

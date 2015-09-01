@@ -21,15 +21,16 @@ namespace classCatalogerWPF
         public string prevStudentName; // variable for the last student who had the book
         public bool checkedOut;
         public DateTime checkOutDate;
-        public string checkOutDur;
+        public int checkOutDur;
         public bool reminder;
 
         public bool IsOverdue()
         {
-            if(checkOutDate.)
+            if(checkOutDate.AddDays(7) >= DateTime.Now)
             {
-
+                return true;
             }
+            return false;
         }
     }
 }
