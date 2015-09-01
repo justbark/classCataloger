@@ -38,14 +38,27 @@ namespace classCatalogerWPF
 
         private void dueDateReminderCheckBox_Checked(object sender, RoutedEventArgs e)
         {
-
+            currentBook.reminder = true;
         }
 
         private void finalCheckOutButton_Click(object sender, RoutedEventArgs e)
         {
-            currentBook.studentName = checkOutToTextBox.Text;
-            currentBook.checkedOut = true;
-            this.Close();
+            if (!String.IsNullOrEmpty(checkOutToTextBox.Text))
+            {
+                currentBook.studentName = checkOutToTextBox.Text;
+                currentBook.checkedOut = true;
+                DateTime currentDate = DateTime.Now;
+                currentBook.checkOutDate = currentDate;
+                this.Close();
+            }
+            else
+            {
+                //add a label underneath checkOutToTextBox and set its content to ""
+                //then when checkouttotextbox is null or empty add 
+                //youmessedupLabel.background = color.red
+                //then change the text to You must enter a student name
+            }
+            
         }
     }
 }

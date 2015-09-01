@@ -32,7 +32,20 @@ namespace classCatalogerWPF
         {
             InitializeComponent();
             Shared.bookList.CollectionChanged+=bookList_CollectionChanged; //check if the collection has changed
+            checkOverDue();
          }
+
+        private void checkOverDue()
+        {
+            // put date and time stuff here.
+            foreach (Book b in Shared.bookList)
+            {
+                if(b.IsOverdue())
+                {
+                    //I’m overdue!
+                }
+            }
+        }
 
         private void bookList_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
         {
