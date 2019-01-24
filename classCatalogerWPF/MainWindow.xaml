@@ -1,22 +1,24 @@
 ﻿<Window x:Name="MainWindow1" x:Class="classCatalogerWPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Classroom Library" Height="371.493" Width="668.284">
+        Title="Classroom Library" Height="431.673" Width="668.284">
     <Grid Margin="0,0,-0.4,0.8">
-        <ListBox x:Name="libraryListBox" HorizontalAlignment="Left" Height="292" Margin="10,39,0,0" VerticalAlignment="Top" Width="439" SelectionChanged="libraryListBox_SelectionChanged"/>
+        <ListBox x:Name="libraryListBox" HorizontalAlignment="Left" Height="351" Margin="10,39,0,0" VerticalAlignment="Top" Width="439" SelectionChanged="libraryListBox_SelectionChanged"/>
         <Label Content="Library" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.845,-0.305"/>
-        <Button x:Name="checkOutButton" Content="Check out" HorizontalAlignment="Left" Margin="468,39,0,0" VerticalAlignment="Top" Width="184" Click="checkOutButton_Click"/>
-        <Button x:Name="addABookButton" Content="Add a book" HorizontalAlignment="Left" Margin="468,63,0,0" VerticalAlignment="Top" Width="184" RenderTransformOrigin="-0.201,-0.236" Click="addABookButton_Click"/>
-        <Button x:Name="removeBookButton" Content="Remove a book" HorizontalAlignment="Left" Margin="468,87,0,0" VerticalAlignment="Top" Width="184"/>
-        <Button x:Name="editBookButton" Content="Edit a book" HorizontalAlignment="Left" Margin="468,111,0,0" VerticalAlignment="Top" Width="184"/>
-        <Border x:Name="statusBorder" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="166" Margin="468,165,0,0" VerticalAlignment="Top" Width="184"/>
-        <Label x:Name="statusBoxLabel" Content="Status Box:" HorizontalAlignment="Left" Margin="468,139,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="status" Content="status:" HorizontalAlignment="Left" Margin="468,165,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="statusLabel" Content="Select a book" HorizontalAlignment="Left" Margin="484,190,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="checkedOutTo" Content="Checked out to:" HorizontalAlignment="Left" Margin="468,216,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="checkedOutToLabel" Content="N/A" HorizontalAlignment="Left" Margin="503,242,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="studentWhoHadItLast" Content="Student Who last checked it out:" HorizontalAlignment="Left" Margin="468,267,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lastCheckedOutLabel" Content="N/A" HorizontalAlignment="Left" Margin="503,298,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="checkOutButton" Content="Check Out Book" HorizontalAlignment="Left" Margin="470,89,0,0" VerticalAlignment="Top" Width="180" Click="checkOutButton_Click"/>
+        <Button x:Name="addABookButton" Content="Add a Book" HorizontalAlignment="Left" Margin="470,114,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="-0.201,-0.236" Click="addABookButton_Click"/>
+        <Button x:Name="removeBookButton" Content="Remove a Book" HorizontalAlignment="Left" Margin="470,139,0,0" VerticalAlignment="Top" Width="180"/>
+        <Button x:Name="editBookButton" Content="Edit a Book" HorizontalAlignment="Left" Margin="470,164,0,0" VerticalAlignment="Top" Width="180"/>
+        <Border x:Name="statusBorder" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="170" Margin="468,220,0,0" VerticalAlignment="Top" Width="184" RenderTransformOrigin="0.492,1.193"/>
+        <Label x:Name="statusBoxLabel" Content="Status Box:" HorizontalAlignment="Left" Margin="467,189,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="status" Content="status:" HorizontalAlignment="Left" Margin="468,220,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="statusLabel" Content="Select a book" HorizontalAlignment="Left" Margin="481,246,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="checkedOutTo" Content="Checked out to:" HorizontalAlignment="Left" Margin="468,272,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="checkedOutToLabel" Content="N/A" HorizontalAlignment="Left" Margin="503,298,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="studentWhoHadItLast" Content="Student Who last checked it out:" HorizontalAlignment="Left" Margin="470,324,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.472,3.337"/>
+        <Label x:Name="lastCheckedOutLabel" Content="N/A" HorizontalAlignment="Left" Margin="503,350,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.519,2.278"/>
+        <Button x:Name="addStudentBtn" Content="Add Student" HorizontalAlignment="Left" Margin="470,64,0,0" VerticalAlignment="Top" Width="180" Click="addStudentBtn_click"/>
+        <Button x:Name="viewStudentList" Content="View Student List" HorizontalAlignment="Left" Margin="470,39,0,0" VerticalAlignment="Top" Width="180"/>
 
     </Grid>
 </Window>

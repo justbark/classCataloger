@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
+using System.Data.SQLite;
 
 namespace classCatalogerWPF
 {
@@ -31,6 +32,10 @@ namespace classCatalogerWPF
         public MainWindow()
         {
             InitializeComponent();
+            Database databaseObject = new Database();
+
+            //add books from database to main window.
+
             Shared.bookList.CollectionChanged+=bookList_CollectionChanged; //check if the collection has changed
             checkOverDue();
          }
@@ -90,6 +95,10 @@ namespace classCatalogerWPF
             CheckOutWindow checkOutForm = new CheckOutWindow(ref theBook);
             checkOutForm.Show();
         }
-        
+
+        private void addStudentBtn_click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

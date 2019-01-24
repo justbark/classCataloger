@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\obj\Debug\
+D:\projects\classCatalog\classCataloger\classCatalogerWPF\obj\Debug\
 classCatalogerWPF
 none
 false
 DEBUG;TRACE
-C:\Users\Justin\Documents\GitHub\classCataloger\classCatalogerWPF\App.xaml
+D:\projects\classCatalog\classCataloger\classCatalogerWPF\App.xaml
 3-1242089764
 
-12-861238679
-12-1401562060
+13-804233531
+18-1192401893
 AddBookWindow.xaml;CheckOutWindow.xaml;MainWindow.xaml;
 
 False
